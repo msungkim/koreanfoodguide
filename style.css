@@ -5,6 +5,7 @@
   font-display: swap;
   src: url('https://fonts.gstatic.com/s/crimsontext/v19/wlpogx_MKY6bIJam2D3GdfR9Vw.woff2') format('woff2');
 }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -12,6 +13,7 @@
   font-display: swap;
   src: url('https://fonts.gstatic.com/s/opensans/v34/mem8YaGs126MiZpBA-U1Ug.woff2') format('woff2');
 }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -74,8 +76,8 @@ header {
 header h1 {
   font-family: 'Crimson Text', serif;
   font-size: 2.7rem;
-  letter-spacing: .5px;
-  margin-bottom: .5rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
 }
 
 header h1 a {
@@ -85,7 +87,7 @@ header h1 a {
 
 header .sub {
   font-size: 1.05rem;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 nav {
@@ -98,16 +100,16 @@ nav ul {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  padding: .75rem 0;
+  padding: 0.75rem 0;
 }
 
 nav a {
   color: #F5F5F5;
   text-decoration: none;
   font-weight: 600;
-  padding: .4rem .8rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 6px;
-  transition: background-color .25s ease, transform .1s ease;
+  transition: background-color 0.25s ease, transform 0.1s ease;
 }
 
 nav a:link,
@@ -139,7 +141,7 @@ article {
   background-color: #fff;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,.07);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
 }
 
 article h2 {
@@ -166,7 +168,7 @@ article p {
 }
 
 .key-points li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .summary-note {
@@ -186,8 +188,8 @@ aside figure {
 
 aside img {
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.12);
-  transition: transform .25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease;
 }
 
 aside img:hover {
@@ -195,34 +197,12 @@ aside img:hover {
 }
 
 aside figcaption {
-  font-size: .92rem;
+  font-size: 0.92rem;
   color: #444;
-  margin-top: .45rem;
+  margin-top: 0.45rem;
   line-height: 1.4;
   font-style: italic;
   text-align: center;
-}
-
-.meaning-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin: 1rem 0 1.5rem;
-}
-
-.claim-card,
-.food-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.06);
-  padding: 1.1rem 1.2rem;
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.claim-card:hover,
-.food-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 14px rgba(0,0,0,.12);
 }
 
 .highlight-favorite {
@@ -230,77 +210,102 @@ aside figcaption {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
 }
 
-main.foods-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+.foods-page {
+  display: block;
 }
 
 .foods-wrap {
-  width: 100%;
-  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
 }
 
-.foods-page .foods-wrap h2 {
+.foods-wrap h2 {
   font-family: 'Crimson Text', serif;
   color: #8B2E1A;
   font-size: 1.9rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
 }
 
-.foods-page .summary-note {
-  margin: 0.25rem auto 1.5rem;
-  max-width: 40rem;
-  font-size: 0.98rem;
+.foods-wrap .summary-note {
+  margin-bottom: 1.25rem;
+  text-align: left;
+  max-width: 60rem;
 }
 
 .foods-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.8rem;
-  justify-content: center;
-  align-items: stretch;
-  width: 100%;
-  max-width: 1000px;
-  margin: 1.5rem auto 0;
+  gap: 1.2rem;
 }
 
 .food-card {
-  max-width: 300px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 0.6rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
 }
 
 .food-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(0,0,0,.08);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
 }
 
 .food-card h3 {
   font-family: 'Crimson Text', serif;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: #8B2E1A;
+  margin: 1rem 0 0.35rem;
 }
 
 .food-card .role {
   font-weight: 700;
   color: #B84D34;
   font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  text-align: left;
 }
 
 .food-card .blurb {
   color: #444;
   font-size: 0.95rem;
-  text-align: center;
+  text-align: left;
+}
+
+.favorite-btn {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #8B2E1A;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.1s ease;
+}
+
+.favorite-btn:hover {
+  background-color: #B84D34;
+}
+
+.favorite-btn:active {
+  transform: translateY(1px);
+}
+
+.favorite-btn:focus-visible {
+  outline: 3px solid #FFD1C6;
+  outline-offset: 2px;
 }
 
 .media-section {
@@ -373,12 +378,7 @@ button[type="submit"]:hover {
 }
 
 .show-message {
-  animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  padding-top: 0.25rem;
 }
 
 footer {
@@ -386,15 +386,15 @@ footer {
   color: #fff;
   text-align: center;
   padding: 2rem 1rem;
-  font-size: .95rem;
+  font-size: 0.95rem;
   margin-top: 2rem;
   border-top: 2px solid #B84D34;
 }
 
 .top-link {
   display: inline-block;
-  margin-top: .35rem;
-  padding: .45rem .8rem;
+  margin-top: 0.35rem;
+  padding: 0.45rem 0.8rem;
   background: #B84D34;
   color: #fff;
   border-radius: 6px;
@@ -413,8 +413,9 @@ footer {
     gap: 1.2rem;
   }
 
-  .meaning-grid {
+  .foods-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.4rem;
   }
 }
 
@@ -428,12 +429,12 @@ footer {
     gap: 2rem;
   }
 
+  .foods-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   video,
   audio {
     max-width: 90%;
-  }
-
-  .foods-grid {
-    grid-template-columns: repeat(3, minmax(220px, 1fr));
   }
 }
