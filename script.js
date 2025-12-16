@@ -32,7 +32,7 @@ function setupContactFormMessage() {
   if (!form || !status) return;
 
   form.addEventListener('submit', function (event) {
-        event.preventDefault();
+    event.preventDefault();
 
     const nameInput = form.querySelector('input[name="name"]');
     const dishInput = form.querySelector('input[name="dish"]');
